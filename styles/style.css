@@ -182,6 +182,81 @@ main{
     font-size: 16px;
     margin-bottom: 24px;
 }
+/* News Section Style  */
+.news-section{
+    padding-bottom: 50px;
+    margin-bottom:50px ;
+}
+.news{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+}
+.news-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    
+}
+.news-item:hover .thumbnail img{
+    transform: scale(1.1);
+}
+.thumbnail{
+    width: 100%;
+    overflow: hidden;
+    
+    /* width: 300px; */
+    /* height: 200px; */
+    /* background-color: salmon; */
+}
+.thumbnail img{
+    width: 100%;
+    transition: all ease 0.5s;
+    /* height: 100%; */
+}
+
+.news-item h4{
+
+}
+.news-item span{
+    color: rgba(0, 0, 0, 0.705);
+}
+
+/* Subscribe Section style */
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    padding-bottom: 50px;
+}
+.subscribe h1{
+    font-size: 50px;
+}
+input{
+    display: block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border:0px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    transition: all ease-in-out 0.5s;
+}
+input:hover,:focus{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.473);
+    transform: scale(1.1);
+}
+#subcribe-btn{
+    text-align: center;
+    display: block;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 300px;
+}
 
 /* Footer Style  */
 footer{
